@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Time_em</string>
+    <string name="add">+Manage</string>
+    <string name="attachment">Attachment:</string>
+    <string name="task_description">Task Description:</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- live url client-->
+    <!-- <string name="baseUrl">http://timeemapi.azurewebsites.net/api</string>-->
+
+    <!-- staging url client-->
+    <!-- http://timeem-staging.azurewebsites.net/-->
+
+    <!-- Testing url local-->
+    <!--  <string name="baseUrl">http://112.196.24.202:8080/api</string>-->
+    <!-- <string name="baseUrl">http://112.196.24.205:804/api/</string>-->
+
+    <string name="baseUrl">http://timeem-staging.azurewebsites.net/api/</string>
+    <string name="comments">Comments :</string>
+    <string name="enter_your_comments">Enter your Comments</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hours_worked">Hours worked: </string>
+    <string name="trackEmUrl">http://10.saleemserver.com/TrackemMobileInitiateApi</string>
+    <string name="taskTimeStampStr">_taskTimeStamp</string>
+    <string name="teamTimeStampStr">_teamTimeStamp</string>
+    <string name="notificationTimeStampStr">_notificationTimeStamp</string>
+    <string name="activeUsersTimeStampStr">_activeUsersTimeStamp</string>
+    <string name="my_tasks">My Tasks</string>
+    <string name="selected_notification">Selected Notifications type</string>
+    <string name="sign_in">SignIn</string>
+    <string name="specify_numbers_of_hours">Specify Number of Hours</string>
+    <string name="upload_image_video">Upload Image/Video</string>
+    <string name="userSignedIn">You are currently Signed In. Please click Sign Out to go offline.</string>
+    <string name="userSignedOut">You are currently Signed Out. Please click Sign In to go online.</string>
+    <string name="you_are_comment">You are comment goes here</string>
+    <string name="number_of_hours">Number of hours</string>
+    <string name="title_activity_send_notification">SendNotification</string>
+    <string name="title_activity_user_selection">UserSelectionActivity</string>
+</resources>

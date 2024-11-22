@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bg_graph"
+    android:layout_width="30dp"
+    android:layout_height="180dp"
+   android:background="@color/white"
+    >
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:textSize="12sp"
+        android:text="22"
+        android:gravity="center"
+        android:textColor="@color/black"/>
+    <LinearLayout
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/date"
+        android:gravity="bottom|center"
+        android:layout_centerInParent="true"
+        >
+    <TextView
+        android:id="@+id/graphBar"
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:background="@drawable/graph_blue_bg"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

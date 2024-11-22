@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include android:id="@+id/headerLayout" layout="@layout/include_toolbar"></include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+    <LinearLayout
+        android:id="@+id/lay_profilePic"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/gradientBgStart"
+        android:gravity="center_vertical">
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="95dp"
+            android:layout_gravity="center"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#ffffff"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:id="@+id/txtName"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_Name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user_black"
+            android:layout_marginRight="10dp" />
+
+        <EditText
+            android:id="@+id/edt_Name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:ems="10"
+            android:singleLine="true"
+            android:padding="8dp"
+            android:hint=""
+            android:textColor="@color/black"
+            android:imeOptions="actionDone"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+    <TextView style="@style/separator" />
+    <LinearLayout
+        android:id="@+id/lay_email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user_black"
+            android:layout_marginRight="10dp" />
+
+        <EditText
+            android:id="@+id/edt_Email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:ems="10"
+            android:singleLine="true"
+            android:padding="8dp"
+            android:hint=""
+            android:textColor="@color/black"
+            android:imeOptions="actionDone"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+    <TextView style="@style/separator" />
+    <LinearLayout
+        android:id="@+id/lay_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lock"
+            android:layout_marginRight="10dp" />
+
+        <EditText
+            android:id="@+id/edt_pass"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:ems="10"
+            android:padding="8dp"
+            android:hint="Password"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:imeOptions="actionDone"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/phone"
+            android:layout_marginRight="10dp" />
+
+        <EditText
+            android:id="@+id/edt_Phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:ems="10"
+            android:padding="8dp"
+            android:hint=""
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:imeOptions="actionDone"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+            <TextView style="@style/separator" />
+            <LinearLayout
+                android:id="@+id/lay_company"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/company"
+                    android:layout_marginRight="10dp" />
+
+                <EditText
+                    android:id="@+id/edt_company"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:ems="10"
+                    android:padding="8dp"
+                    android:hint=""
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:imeOptions="actionDone"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+            <TextView style="@style/separator" />
+            <LinearLayout
+                android:id="@+id/lay_userType"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/user_black"
+                    android:layout_marginRight="10dp" />
+
+                <EditText
+                    android:id="@+id/edt_userType"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:ems="10"
+                    android:padding="8dp"
+                    android:hint=""
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:imeOptions="actionDone"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+            <TextView style="@style/separator" />
+    <LinearLayout
+        android:id="@+id/lay_Logout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logout"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:id="@+id/txt_Logout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:ems="10"
+            android:padding="8dp"
+            android:hint="Logout"
+            android:textColor="@color/black"
+            android:imeOptions="actionDone"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
